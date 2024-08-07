@@ -39,6 +39,15 @@ export default function HomePage() {
         }}>
 
         </Box>
+        <Box sx={{
+          backgroundImage: `url(${orchardWaterColor})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          height: "385px",
+          minHeight: "20rem"
+        }}>
+
+        </Box>
       </Box>
     </>
   )
