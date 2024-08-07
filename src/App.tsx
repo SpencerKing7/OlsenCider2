@@ -15,11 +15,6 @@ function App() {
         {/* <NavBar /> */}
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route />
-          <Route />
-          <Route />
-          <Route />
-          <Route />
         </Routes>
       </ThemeProvider>
     </>
