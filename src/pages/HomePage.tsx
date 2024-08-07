@@ -28,7 +28,7 @@ export default function HomePage() {
           height: "385px",
           minHeight: "20rem"
         }}>
-
+          <p>Hey</p>
         </Box>
 
         <Box sx={{
