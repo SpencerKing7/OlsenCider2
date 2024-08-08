@@ -7,6 +7,7 @@ import { CssBaseline } from '@mui/material';
 import theme from './theme'
 import HomePage from './pages/HomePage';
 import NavBar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,7 +18,13 @@ function App() {
           <NavBar />
           <Routes>
             <Route path='/' element={<HomePage />} />
+            <Route path='/AboutUs' element={<HomePage />} />
+            <Route path='/Services' element={<HomePage />} />
+            <Route path='/CiderTips' element={<HomePage />} />
+            <Route path='/ContactUs' element={<HomePage />} />
+            <Route path='/FoodSafety' element={<HomePage />} />
           </Routes>
+          <Footer />
         </ThemeProvider>
       </HashRouter>
     </>
