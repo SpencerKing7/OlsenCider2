@@ -18,11 +18,11 @@ function App() {
           <NavBar />
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/AboutUs' element={<HomePage />} />
+            {/* <Route path='/AboutUs' element={<HomePage />} />
             <Route path='/Services' element={<HomePage />} />
             <Route path='/CiderTips' element={<HomePage />} />
             <Route path='/ContactUs' element={<HomePage />} />
-            <Route path='/FoodSafety' element={<HomePage />} />
+            <Route path='/FoodSafety' element={<HomePage />} /> */}
           </Routes>
           <Footer />
         </ThemeProvider>
