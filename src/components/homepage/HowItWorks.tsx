@@ -13,7 +13,7 @@ export default function HowItWorks() {
         backgroundImage: `linear-gradient(rgba(160, 35, 34, 0.7), rgba(160, 35, 34, 0.7)), url(${whiteApples})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "385px",
+        height: "auto",
         minHeight: "20rem",
         width: '100%',
         position: 'relative'
@@ -28,10 +28,22 @@ export default function HowItWorks() {
         </Box>
         {/* <Container sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}> */}
         <Grid container spacing={2}>
-          <Grid item xs={6} md={3}><Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }}>You Book A Time</Typography></Grid>
-          <Grid item xs={6} md={3}><Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }}>We Show Up</Typography></Grid>
-          <Grid item xs={6} md={3}><Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }}>We Process Your Apples</Typography></Grid>
-          <Grid item xs={6} md={3}><Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }}>We Bottle The Cider</Typography></Grid>
+          <Grid item xs={6} md={3}>
+            <Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }} variant='body2'>You Book A Time</Typography>
+            <Typography variant='body1' sx={{ textAlign: "center" }}>Testkskskska asdfj alsjdf</Typography>
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }}>We Show Up</Typography>
+            <Typography variant='body1' sx={{ textAlign: "center" }}>Testkskskska asdfj alsjdf</Typography>
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }}>We Process Your Apples</Typography>
+            <Typography variant='body1' sx={{ textAlign: "center" }}>Testkskskska asdfj alsjdf</Typography>
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }}>We Bottle The Cider</Typography>
+            <Typography variant='body1' sx={{ textAlign: "center" }}>Testkskskska asdfj alsjdf</Typography>
+          </Grid>
         </Grid>
         {/* </Container> */}
       </Box>
