@@ -32,8 +32,17 @@ const theme = createTheme({
       fontSize: "2rem",
       fontWeight: 600,
     },
+    h3: {
+      fontSize: "1.5rem",
+      fontWeight: 600,
+    },
     body1: {
       fontSize: "1rem",
+      fontFamily: "sans-serif",
+    },
+    body2: {
+      fontSize: ".5rem",
+      fontFamily: "sans-serif",
     },
   },
   spacing: 8, // Customize spacing scale (default is 8)

@@ -29,20 +29,20 @@ export default function HowItWorks() {
         {/* <Container sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}> */}
         <Grid container spacing={2}>
           <Grid item xs={6} md={3}>
-            <Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }} variant='body2'>You Book A Time</Typography>
-            <Typography variant='body1' sx={{ textAlign: "center" }}>Testkskskska asdfj alsjdf</Typography>
+            <Typography color={"primary"} variant='h3' sx={{ mt: "9rem", textAlign: "center" }}>You Book A Time</Typography>
+            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center" }}>Use our online booking tool to pick your service day(s) and time. It's easy!</Typography>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }}>We Show Up</Typography>
-            <Typography variant='body1' sx={{ textAlign: "center" }}>Testkskskska asdfj alsjdf</Typography>
+            <Typography color={"primary"} variant='h3' sx={{ mt: "9rem", textAlign: "center" }}>We Show Up</Typography>
+            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center" }}>We show up to your home with our proprietary mobile apple pressing system</Typography>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }}>We Process Your Apples</Typography>
-            <Typography variant='body1' sx={{ textAlign: "center" }}>Testkskskska asdfj alsjdf</Typography>
+            <Typography color={"primary"} variant='h3' sx={{ mt: "9rem", textAlign: "center" }}>We Process Your Apples</Typography>
+            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center" }}>We run your pre-sorted apples through our apple press and filter and settle the cider to reduce sediment.</Typography>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Typography color={"primary"} sx={{ mt: "9rem", textAlign: "center" }}>We Bottle The Cider</Typography>
-            <Typography variant='body1' sx={{ textAlign: "center" }}>Testkskskska asdfj alsjdf</Typography>
+            <Typography color={"primary"} variant='h3' sx={{ mt: "9rem", textAlign: "center" }}>We Bottle The Cider</Typography>
+            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center" }}>We bottle the fresh cider in your desired food-safe containers (or our own bottles for an extra fee).</Typography>
           </Grid>
         </Grid>
         {/* </Container> */}
