@@ -19,33 +19,40 @@ export default function HowItWorks() {
         position: 'relative'
       }}>
         {/* Main */}
-        <Box sx={{ display: "flex", flexDirection: "row" }}>
-          <Divider color={"white"} />
-          <Typography variant="h2" sx={{ position: "absolute", color: "primary.main", textAlign: "center", width: "100%", mt: "4rem" }}>
-            How It Works
-          </Typography>
-          <Divider />
-        </Box>
-        {/* <Container sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}> */}
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{ pt: "3rem", alignItems: "center", justifyContent: "center" }}>
+          <Grid item xs={2} md={5}>
+            <Divider sx={{ borderColor: "white", borderBottomWidth: 2, ml: "20px", borderStyle: "dashed" }} />
+          </Grid>
+          <Grid item xs={8} md={2}>
+            <Typography variant="h2" sx={{ color: "primary.main", textAlign: "center" }}>
+              How It Works
+            </Typography>
+          </Grid>
+          <Grid item xs={2} md={5}>
+            <Divider sx={{ borderColor: "white", borderBottomWidth: 2, mr: "20px", borderStyle: "dashed" }} />
+          </Grid>
+
+
+        </Grid>
+
+        <Grid container spacing={2} sx={{ pb: "2rem" }}>
           <Grid item xs={6} md={3}>
-            <Typography color={"primary"} variant='h3' sx={{ mt: "9rem", textAlign: "center" }}>You Book A Time</Typography>
-            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center" }}>Use our online booking tool to pick your service day(s) and time. It's easy!</Typography>
+            <Typography color={"primary"} variant='h3' sx={{ mt: "1rem", textAlign: "center" }}>You Book A Time</Typography>
+            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center", p: "15px", m: "10px" }}>Use our online booking tool to pick your service day(s) and time. It's easy!</Typography>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Typography color={"primary"} variant='h3' sx={{ mt: "9rem", textAlign: "center" }}>We Show Up</Typography>
-            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center" }}>We show up to your home with our proprietary mobile apple pressing system</Typography>
+            <Typography color={"primary"} variant='h3' sx={{ mt: "1rem", textAlign: "center" }}>We Show Up</Typography>
+            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center", p: "15px", m: "10px" }}>We show up to your home with our proprietary mobile apple pressing system</Typography>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Typography color={"primary"} variant='h3' sx={{ mt: "9rem", textAlign: "center" }}>We Process Your Apples</Typography>
-            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center" }}>We run your pre-sorted apples through our apple press and filter and settle the cider to reduce sediment.</Typography>
+            <Typography color={"primary"} variant='h3' sx={{ mt: "1rem", textAlign: "center" }}>We Process Your Apples</Typography>
+            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center", p: "15px", m: "10px" }}>We run your pre-sorted apples through our apple press and filter and settle the cider to reduce sediment.</Typography>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Typography color={"primary"} variant='h3' sx={{ mt: "9rem", textAlign: "center" }}>We Bottle The Cider</Typography>
-            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center" }}>We bottle the fresh cider in your desired food-safe containers (or our own bottles for an extra fee).</Typography>
+            <Typography color={"primary"} variant='h3' sx={{ mt: "1rem", textAlign: "center" }}>We Bottle The Cider</Typography>
+            <Typography color={"primary"} variant='body1' sx={{ textAlign: "center", p: "15px", m: "10px" }}>We bottle the fresh cider in your desired food-safe containers (or our own bottles for an extra fee).</Typography>
           </Grid>
         </Grid>
-        {/* </Container> */}
       </Box>
     </>
 
