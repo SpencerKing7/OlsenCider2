@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OlsenCider2/static/css/main.d7f9d24a.css",
-    "main.js": "/OlsenCider2/static/js/main.b9fa22e0.js",
+    "main.js": "/OlsenCider2/static/js/main.05d88368.js",
     "static/js/453.35607f0f.chunk.js": "/OlsenCider2/static/js/453.35607f0f.chunk.js",
     "static/media/apple-orchard-illustration-olsenscider.com.jpeg": "/OlsenCider2/static/media/apple-orchard-illustration-olsenscider.com.fc55b8304944c55c3613.jpeg",
     "static/media/apple-orchard-watercolor-olsenscider.com.jpeg": "/OlsenCider2/static/media/apple-orchard-watercolor-olsenscider.com.50a5c21c134336b4c510.jpeg",
@@ -9,11 +9,11 @@
     "static/media/cider-sm-white.png": "/OlsenCider2/static/media/cider-sm-white.1d02138e14b2ff1c8923.png",
     "index.html": "/OlsenCider2/index.html",
     "main.d7f9d24a.css.map": "/OlsenCider2/static/css/main.d7f9d24a.css.map",
-    "main.b9fa22e0.js.map": "/OlsenCider2/static/js/main.b9fa22e0.js.map",
+    "main.05d88368.js.map": "/OlsenCider2/static/js/main.05d88368.js.map",
     "453.35607f0f.chunk.js.map": "/OlsenCider2/static/js/453.35607f0f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7f9d24a.css",
-    "static/js/main.b9fa22e0.js"
+    "static/js/main.05d88368.js"
   ]
 }
