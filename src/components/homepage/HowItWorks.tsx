@@ -6,17 +6,14 @@ import whiteApples from "../../img/apple-leaf-tile-olsenscider.com.jpeg"
 export default function HowItWorks() {
   return (
     <>
-
-
       {/* Background */}
       <Box sx={{
-        backgroundImage: `linear-gradient(rgba(160, 35, 34, 0.7), rgba(160, 35, 34, 0.7)), url(${whiteApples})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        height: "auto",
-        minHeight: "20rem",
+        backgroundImage: `linear-gradient(rgba(160, 35, 34, 0.8), rgba(160, 35, 34, 0.8)), url(${whiteApples})`,
+        backgroundRepeat: "repeat",
+        // backgroundSize: "cover",
+        // height: "auto",
         width: '100%',
-        position: 'relative'
+        // position: 'relative'
       }}>
         {/* Main */}
         <Grid container spacing={2} sx={{ pt: "3rem", alignItems: "center", justifyContent: "center" }}>

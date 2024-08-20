@@ -1,31 +1,38 @@
 import React from 'react'
-import { Box, Typography, Paper, Button } from '@mui/material'
+import { Box, Typography, Grid, Button, Avatar } from '@mui/material'
 import orchardWaterColor from "../../img/apple-orchard-watercolor-olsenscider.com.jpeg"
+import kylerJess from "../../img/kyler-jess-press-sq-olsenscider.com.jpg"
 
 
 export default function WhoAreOlsens() {
   return (
     <>
-      {/* Text/Buttons */}
-      <Box sx={{ zIndex: 1000 }}>
-        <Typography variant="h1" sx={{ zIndex: 100, position: "absolute", color: "primary", textAlign: "center", width: "100%", mt: "6rem" }}>Who are the Olsens</Typography>
-        <Box sx={{ display: "flex", justifyContent: "center", position: "absolute", mt: "11rem", width: "100%" }}>
-          <Button variant='contained' sx={{ backgroundColor: "#69903C", fontFamily: "sans-serif" }}>Learn More</Button>
-        </Box>
-      </Box>
+
 
       {/* Background */}
       <Box sx={{
-        backgroundImage: `url(${orchardWaterColor})`,
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(${orchardWaterColor})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "385px",
-        minHeight: "20rem",
+        height: "auto",
         width: '100%',
-        position: 'relative',
-        zIndex: -100
+        position: 'relative'
       }}>
-        <Paper sx={{ height: "100%", width: "100%", backgroundColor: "#FFFFFF", opacity: "35%" }} />
+        {/* Text/Buttons */}
+        <Grid container spacing={2}>
+          <Grid item md={12} xs={12} sx={{ width: "100%", justifyContent: "center", display: "flex", mt: "1rem" }}>
+            <Avatar src={kylerJess} sx={{ width: 125, height: 125 }} />
+          </Grid>
+          <Grid item md={12} xs={12}>
+            <Typography variant="h2" sx={{ color: "primary", textAlign: "center", width: "100%" }}>Who are the "Olsens" in Olsen's Hometown Cider?</Typography>
+            <Typography variant="body1" sx={{ color: "primary", textAlign: "center", width: "100%", mt: 1, p: 2 }}>
+              Olsen's Hometown Cider was founded by a husband and wife duo right here in Cache Valley. Their mission is to bring a beloved family tradition to your home.
+            </Typography>
+          </Grid>
+          <Grid item md={12} xs={12} sx={{ width: "100%", justifyContent: "center", display: "flex", mt: "1rem", pb: "2rem" }}>
+            <Button variant='contained' sx={{ backgroundColor: "#69903C", fontFamily: "sans-serif", '&:hover': { backgroundColor: "#5A7A33", color: "#ffffff" } }}>Learn More</Button>
+          </Grid>
+        </Grid>
       </Box>
     </>
 

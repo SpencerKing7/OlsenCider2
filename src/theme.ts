@@ -45,10 +45,6 @@ const theme = createTheme({
       fontFamily: "sans-serif",
     },
   },
-  spacing: 8, // Customize spacing scale (default is 8)
-  shape: {
-    borderRadius: 4, // Customize default border radius
-  },
 });
 
 export default theme;

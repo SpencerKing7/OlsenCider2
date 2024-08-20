@@ -1,7 +1,7 @@
 import React from 'react';
 // import NavBar from './components/Navbar'
 import './App.css';
-import { Routes, Route, HashRouter } from 'react-router-dom'
+import { Routes, Route, HashRouter, Router } from 'react-router-dom'
 import { ThemeProvider } from '@emotion/react';
 import { CssBaseline } from '@mui/material';
 import theme from './theme'
@@ -18,11 +18,6 @@ function App() {
           <NavBar />
           <Routes>
             <Route path='/' element={<HomePage />} />
-            {/* <Route path='/AboutUs' element={<HomePage />} />
-            <Route path='/Services' element={<HomePage />} />
-            <Route path='/CiderTips' element={<HomePage />} />
-            <Route path='/ContactUs' element={<HomePage />} />
-            <Route path='/FoodSafety' element={<HomePage />} /> */}
           </Routes>
           <Footer />
         </ThemeProvider>

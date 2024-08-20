@@ -10,6 +10,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Box from '@mui/material/Box';
 import { useMediaQuery, useTheme } from '@mui/material';
 import Drawer from '@mui/material/Drawer';
+import Container from '@mui/material/Container';
 
 // Define the type for the props of the ElevationScroll component
 interface ElevationScrollProps {
@@ -43,7 +44,7 @@ export default function NavBar(props: any) {
   };
 
   const renderMenuButtons = () => (
-    <Box sx={{ display: isMobile ? "flex" : "", flexDirection: isMobile ? "column" : "", alignContent: isMobile ? "right" : "" }}>
+    <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "left" : "right" }}>
       <Button color="primary" sx={{ fontFamily: 'sans-serif' }} onClick={() => handleNavClick('/')}>
         Home
       </Button>
@@ -63,42 +64,42 @@ export default function NavBar(props: any) {
   );
 
   return (
-    <React.Fragment>
-      <ElevationScroll {...props}>
-        <AppBar sx={{ backgroundColor: "#242523" }}>
-          <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-            <Box>
-              <img src={navBarLogo} alt='logo' height={'50px'} style={{ marginTop: "5px" }} />
-            </Box>
-            {isMobile ? (
-              <>
-                <IconButton
-                  edge="end"
-                  color="inherit"
-                  aria-label="menu"
-                  onClick={toggleDrawer(true)}
-                  sx={{ marginRight: theme.spacing(2) }}
-                >
-                  <MenuIcon />
-                </IconButton>
-                <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
-                  <Box
-                    sx={{ width: 250, height: "100%", padding: theme.spacing(2), backgroundColor: "#242523" }}
-                    role="presentation"
-                    onClick={toggleDrawer(false)}
-                    onKeyDown={toggleDrawer(false)}
+    <>
+      <React.Fragment>
+        <ElevationScroll {...props}>
+          <AppBar sx={{ backgroundColor: "#242523" }} >
+            <Toolbar sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }} >
+              <Box>
+                <img src={navBarLogo} alt='logo' height={'50px'} style={{ marginTop: "5px" }} />
+              </Box>
+              {isMobile ? (
+                <>
+                  <IconButton
+                    edge="end"
+                    color="inherit"
+                    aria-label="menu"
+                    onClick={toggleDrawer(true)}
                   >
-                    {renderMenuButtons()}
-                  </Box>
-                </Drawer>
-              </>
-            ) : (
-              renderMenuButtons()
-            )}
-          </Toolbar>
-        </AppBar>
-      </ElevationScroll>
-      <Toolbar />
-    </React.Fragment>
+                    <MenuIcon />
+                  </IconButton>
+                  <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
+                    <Box
+                      sx={{ width: 250, height: "100%", backgroundColor: "#242523" }}
+                      role="presentation"
+                      onClick={toggleDrawer(false)}
+                      onKeyDown={toggleDrawer(false)}
+                    >
+                      {renderMenuButtons()}
+                    </Box>
+                  </Drawer>
+                </>
+              ) : (
+                renderMenuButtons()
+              )}
+            </Toolbar>
+          </AppBar>
+        </ElevationScroll>
+      </React.Fragment>
+    </>
   );
 }

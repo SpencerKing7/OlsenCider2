@@ -14,7 +14,6 @@ export default function Hero() {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "385px",
-        minHeight: "20rem",
         width: '100%',
         position: 'relative'
       }}>
