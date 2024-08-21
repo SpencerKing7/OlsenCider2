@@ -1,13 +1,14 @@
 import React from 'react';
 // import NavBar from './components/Navbar'
 import './App.css';
-import { Routes, Route, HashRouter, Router } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import { ThemeProvider } from '@emotion/react';
 import { CssBaseline } from '@mui/material';
 import theme from './theme'
 import HomePage from './pages/HomePage';
 import NavBar from './components/Navbar';
 import Footer from './components/Footer';
+import AboutUs from './pages/AboutUsPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route path='/' element={<HomePage />} />
+            <Route path='/AboutUs' element={<AboutUs />} />
           </Routes>
           <Footer />
         </ThemeProvider>
