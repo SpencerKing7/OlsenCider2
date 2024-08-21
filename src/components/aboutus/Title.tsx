@@ -13,11 +13,12 @@ export default function Title() {
         backgroundSize: "cover",
         height: "300px",
         width: '100%',
-        position: 'relative'
+        position: 'relative',
+        mt: "61px"
       }}>
         {/* Text/Buttons */}
-        <Box>
-          <Typography variant="h1" sx={{ zIndex: 100, position: "absolute", color: "white", textAlign: "center", width: "100%", mt: "8rem" }}>About Olsen's Hometown Cider</Typography>
+        <Box sx={{ pt: "3rem" }}>
+          <Typography variant="h1" sx={{ color: "white", textAlign: "center", p: 2 }}>About Olsen's Hometown Cider</Typography>
         </Box>
       </Box>
     </>

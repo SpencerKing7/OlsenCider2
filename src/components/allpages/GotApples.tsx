@@ -2,13 +2,14 @@ import React from 'react'
 import { Box, Typography, Grid, Button } from '@mui/material'
 import whiteApples from "../../img/apple-leaf-tile-olsenscider.com.jpeg"
 import bucket from "../../img/apple-bucket-olsenscider.com.png"
+import { useMediaQuery, useTheme } from '@mui/material';
 
 
 export default function GotApples() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <>
-
-
       {/* Background */}
       <Box sx={{
         backgroundImage: `linear-gradient(rgba(160, 35, 34, 0.8), rgba(160, 35, 34, 0.8)), url(${whiteApples})`,
@@ -19,15 +20,19 @@ export default function GotApples() {
         position: 'relative'
       }}>
         {/* Text/Buttons */}
-        <Grid container spacing={2}>
-          <Grid item md={3} xs={12} sx={{ display: "flex", justifyContent: "center", mt: "1rem" }}>
-            <Box
-              component={"img"}
-              src={bucket}
-              alt='Bucket of apples'
-              sx={{ width: "50%", height: "auto" }}
-            />
-          </Grid>
+        <Grid container spacing={2} sx={{ pb: "1rem", pt: "2rem" }}>
+          {!isMobile ?
+            <Grid item md={3} xs={12} sx={{ display: "flex", justifyContent: "center", mt: "1rem" }}>
+              <Box
+                component={"img"}
+                src={bucket}
+                alt='Bucket of apples'
+                sx={{ width: "auto", height: "90%" }}
+              />
+            </Grid>
+            :
+            <></>
+          }
           <Grid item md={9} xs={12} sx={{ mt: "2rem" }}>
             <Typography variant="h2" sx={{ color: "white", textAlign: "left", width: "100%", ml: 1.5 }}>Got Apples?</Typography>
             <Typography variant="body1" sx={{ color: "white", textAlign: "left", width: "100%", mt: "2rem", ml: 1.5 }}>Your apples shouldn't go to waste. Let us help you turn your apple supply into a delicious autumn treat your whole family can enjoy.</Typography>

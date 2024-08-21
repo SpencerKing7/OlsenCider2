@@ -10,7 +10,6 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Box from '@mui/material/Box';
 import { useMediaQuery, useTheme } from '@mui/material';
 import Drawer from '@mui/material/Drawer';
-import Container from '@mui/material/Container';
 
 // Define the type for the props of the ElevationScroll component
 interface ElevationScrollProps {
@@ -34,8 +33,10 @@ export default function NavBar(props: any) {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const [isSelected, setIsSelected] = React.useState('/');
 
   const handleNavClick = (path: string) => {
+    setIsSelected(path)
     navigate(path);
   };
 
@@ -45,19 +46,19 @@ export default function NavBar(props: any) {
 
   const renderMenuButtons = () => (
     <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "left" : "right" }}>
-      <Button color="primary" sx={{ fontFamily: 'sans-serif' }} onClick={() => handleNavClick('/')}>
+      <Button sx={{ fontFamily: 'sans-serif', color: isSelected === '/' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/')}>
         Home
       </Button>
-      <Button color="primary" sx={{ fontFamily: 'sans-serif' }} onClick={() => handleNavClick('/AboutUs')}>
+      <Button color="primary" sx={{ fontFamily: 'sans-serif', color: isSelected === '/AboutUs' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/AboutUs')}>
         About Us
       </Button>
-      <Button color="primary" sx={{ fontFamily: 'sans-serif' }} onClick={() => handleNavClick('/Services')}>
+      <Button color="primary" sx={{ fontFamily: 'sans-serif', color: isSelected === '/Services' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/Services')}>
         Services
       </Button>
-      <Button color="primary" sx={{ fontFamily: 'sans-serif' }} onClick={() => handleNavClick('/Tips')}>
+      <Button color="primary" sx={{ fontFamily: 'sans-serif', color: isSelected === '/CiderTips' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/CiderTips')}>
         Cider Tips
       </Button>
-      <Button color="primary" sx={{ fontFamily: 'sans-serif' }} onClick={() => handleNavClick('/ContactUs')}>
+      <Button color="primary" sx={{ fontFamily: 'sans-serif', color: isSelected === '/ContactUs' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/ContactUs')}>
         Contact Us
       </Button>
     </Box>
@@ -70,7 +71,7 @@ export default function NavBar(props: any) {
           <AppBar sx={{ backgroundColor: "#242523" }} >
             <Toolbar sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }} >
               <Box>
-                <img src={navBarLogo} alt='logo' height={'50px'} style={{ marginTop: "5px" }} />
+                <img src={navBarLogo} alt='logo' height={'50px'} style={{ marginTop: "5px", cursor: "pointer" }} onClick={() => handleNavClick('/')} />
               </Box>
               {isMobile ? (
                 <>

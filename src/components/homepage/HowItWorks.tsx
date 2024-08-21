@@ -10,15 +10,15 @@ export default function HowItWorks() {
       <Box sx={{
         backgroundImage: `linear-gradient(rgba(160, 35, 34, 0.8), rgba(160, 35, 34, 0.8)), url(${whiteApples})`,
         backgroundRepeat: "repeat",
-        // backgroundSize: "cover",
-        // height: "auto",
+        backgroundSize: "cover",
+        height: "auto",
         width: '100%',
-        // position: 'relative'
+        position: 'relative'
       }}>
         {/* Main */}
         <Grid container spacing={2} sx={{ pt: "3rem", alignItems: "center", justifyContent: "center" }}>
           <Grid item xs={2} md={5}>
-            <Divider sx={{ borderColor: "white", borderBottomWidth: 2, ml: "20px", borderStyle: "dashed" }} />
+            <Divider sx={{ borderColor: "white", borderBottomWidth: 2, ml: "40px", borderStyle: "dashed" }} />
           </Grid>
           <Grid item xs={8} md={2}>
             <Typography variant="h2" sx={{ color: "primary.main", textAlign: "center" }}>
@@ -26,7 +26,7 @@ export default function HowItWorks() {
             </Typography>
           </Grid>
           <Grid item xs={2} md={5}>
-            <Divider sx={{ borderColor: "white", borderBottomWidth: 2, mr: "20px", borderStyle: "dashed" }} />
+            <Divider sx={{ borderColor: "white", borderBottomWidth: 2, mr: "40px", borderStyle: "dashed" }} />
           </Grid>
 
 
