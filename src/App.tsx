@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import NavBar from './components/Navbar';
 import Footer from './components/Footer';
 import AboutUs from './pages/AboutUsPage';
+import ServicesPage from './pages/ServicesPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/AboutUs' element={<AboutUs />} />
+            <Route path='/Services' element={<ServicesPage />} />
           </Routes>
           <Footer />
         </ThemeProvider>
