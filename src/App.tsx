@@ -10,6 +10,7 @@ import NavBar from './components/Navbar';
 import Footer from './components/Footer';
 import AboutUs from './pages/AboutUsPage';
 import ServicesPage from './pages/ServicesPage';
+import CiderTipsPage from './pages/CiderTipsPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path='/' element={<HomePage />} />
             <Route path='/AboutUs' element={<AboutUs />} />
             <Route path='/Services' element={<ServicesPage />} />
+            <Route path='/CiderTips' element={<CiderTipsPage />} />
           </Routes>
           <Footer />
         </ThemeProvider>

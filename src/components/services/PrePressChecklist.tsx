@@ -38,6 +38,11 @@ export default function PrePressChecklist() {
             <Typography variant="body1" sx={{ pt: "1rem" }}>We recommend 1-gallon drink containers (milk jugs, etc) to store your cider in. You can also purchase these from us, new, for $1.50 each.</Typography>
           </Grid>
         </Grid>
+        <Typography color="black" sx={{ textAlign: "center", pb: "2rem", pt: "1rem" }} variant="body1">
+          <span style={{ color: "red", paddingRight: "10px", fontSize: "1.5rem" }}>&#9888;</span>
+          Please note that all cider from our press us <b><u>unpasteurized.</u></b> For more information, check out our
+          <span style={{ color: "red" }}> Food Safety Page.</span>
+        </Typography>
       </Box>
     </>
   )
