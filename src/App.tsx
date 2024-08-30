@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import AboutUs from './pages/AboutUsPage';
 import ServicesPage from './pages/ServicesPage';
 import CiderTipsPage from './pages/CiderTipsPage';
+import FoodSafetyPage from './pages/FoodSafetyPage';
+import ContactUsPage from './pages/ContactUsPage';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Route path='/AboutUs' element={<AboutUs />} />
             <Route path='/Services' element={<ServicesPage />} />
             <Route path='/CiderTips' element={<CiderTipsPage />} />
+            <Route path='/FoodSafety' element={<FoodSafetyPage />} />
+            <Route path='/ContactUs' element={<ContactUsPage />} />
           </Routes>
           <Footer />
         </ThemeProvider>
