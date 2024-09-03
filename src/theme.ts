@@ -22,27 +22,29 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily:
-      '"Gloria Hallelujah", "Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Itim", "Lato", "Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
-      fontSize: "2.5rem",
+      fontSize: "3rem",
       fontWeight: 700,
+      fontFamily: "Itim",
     },
     h2: {
       fontSize: "2rem",
       fontWeight: 600,
+      fontFamily: "Itim",
     },
     h3: {
       fontSize: "1.5rem",
       fontWeight: 600,
+      fontFamily: "Itim",
     },
     body1: {
       fontSize: "1rem",
-      fontFamily: "sans-serif",
+      fontFamily: "Lato",
     },
     body2: {
       fontSize: ".5rem",
-      fontFamily: "sans-serif",
+      fontFamily: "Lato",
     },
   },
 });

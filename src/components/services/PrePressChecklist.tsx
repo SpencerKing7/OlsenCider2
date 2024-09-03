@@ -1,7 +1,14 @@
 import React from "react"
-import { Box, Grid, Typography } from "@mui/material"
+import { Box, Grid, Typography, Link } from "@mui/material"
+import { useNavigate } from "react-router"
 
 export default function PrePressChecklist() {
+  const navigate = useNavigate();
+
+  const clickLink = () => {
+    navigate("/FoodSafety");
+  };
+
   return (
     <>
       <Box sx={{ backgroundColor: "white" }}>
@@ -41,7 +48,7 @@ export default function PrePressChecklist() {
         <Typography color="black" sx={{ textAlign: "center", pb: "2rem", pt: "1rem" }} variant="body1">
           <span style={{ color: "red", paddingRight: "10px", fontSize: "1.5rem" }}>&#9888;</span>
           Please note that all cider from our press us <b><u>unpasteurized.</u></b> For more information, check out our
-          <span style={{ color: "red" }}> Food Safety Page.</span>
+          <Link onClick={clickLink}><span style={{ color: "red", cursor: "pointer" }}> Food Safety Page.</span></Link>
         </Typography>
       </Box>
     </>

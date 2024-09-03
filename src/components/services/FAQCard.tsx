@@ -27,7 +27,7 @@ const FAQCard: React.FC<FAQCardProps> = ({ title, content }) => {
     <>
       <Card sx={{ width: "80%", m: "3rem" }}>
         <CardContent>
-          <Typography variant="h5" sx={{ fontFamily: "sans-serif" }}>{title}</Typography>
+          <Typography variant="h5" sx={{ fontFamily: "Lato" }}>{title}</Typography>
         </CardContent>
         <CardActions disableSpacing>
           <Button onClick={handleExpandClick}>

@@ -46,19 +46,19 @@ export default function NavBar(props: any) {
 
   const renderMenuButtons = () => (
     <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "left" : "right" }}>
-      <Button sx={{ fontFamily: 'sans-serif', color: isSelected === '/' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/')}>
+      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: isSelected === '/' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/')}>
         Home
       </Button>
-      <Button color="primary" sx={{ fontFamily: 'sans-serif', color: isSelected === '/AboutUs' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/AboutUs')}>
+      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: isSelected === '/AboutUs' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/AboutUs')}>
         About Us
       </Button>
-      <Button color="primary" sx={{ fontFamily: 'sans-serif', color: isSelected === '/Services' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/Services')}>
+      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: isSelected === '/Services' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/Services')}>
         Services
       </Button>
-      <Button color="primary" sx={{ fontFamily: 'sans-serif', color: isSelected === '/CiderTips' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/CiderTips')}>
+      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: isSelected === '/CiderTips' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/CiderTips')}>
         Cider Tips
       </Button>
-      <Button color="primary" sx={{ fontFamily: 'sans-serif', color: isSelected === '/ContactUs' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/ContactUs')}>
+      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: isSelected === '/ContactUs' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/ContactUs')}>
         Contact Us
       </Button>
     </Box>

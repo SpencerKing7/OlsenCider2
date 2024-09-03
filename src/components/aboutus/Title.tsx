@@ -11,7 +11,7 @@ export default function AboutUsTitle() {
         backgroundImage: `linear-gradient(rgba(36, 37, 35, 0.3), rgba(36, 37, 35, 0.3)), url(${orchard})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "300px",
+        height: "250px",
         width: '100%',
         position: 'relative',
         mt: "61px"

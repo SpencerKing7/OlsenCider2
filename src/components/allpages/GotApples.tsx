@@ -36,7 +36,7 @@ export default function GotApples() {
           <Grid item md={9} xs={12} sx={{ mt: "2rem" }}>
             <Typography variant="h2" sx={{ color: "white", textAlign: "left", width: "100%", ml: 1.5 }}>Got Apples?</Typography>
             <Typography variant="body1" sx={{ color: "white", textAlign: "left", width: "100%", mt: "2rem", ml: 1.5 }}>Your apples shouldn't go to waste. Let us help you turn your apple supply into a delicious autumn treat your whole family can enjoy.</Typography>
-            <Button variant='contained' sx={{ backgroundColor: "#69903C", fontFamily: "sans-serif", mb: "1.5rem", ml: 1.5, mt: "1.5rem", '&:hover': { backgroundColor: "#5A7A33", color: "#ffffff" } }}>Learn More</Button>
+            <Button variant='contained' sx={{ backgroundColor: "#69903C", fontFamily: "Lato", mb: "1.5rem", ml: 1.5, mt: "1.5rem", '&:hover': { backgroundColor: "#5A7A33", color: "#ffffff" } }}>Learn More</Button>
           </Grid>
         </Grid>
       </Box>

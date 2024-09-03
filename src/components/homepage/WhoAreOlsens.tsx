@@ -30,7 +30,7 @@ export default function WhoAreOlsens() {
             </Typography>
           </Grid>
           <Grid item md={12} xs={12} sx={{ width: "100%", justifyContent: "center", display: "flex", mt: "1rem", pb: "2rem" }}>
-            <Button variant='contained' sx={{ backgroundColor: "#69903C", fontFamily: "sans-serif", '&:hover': { backgroundColor: "#5A7A33", color: "#ffffff" } }}>Learn More</Button>
+            <Button variant='contained' sx={{ backgroundColor: "#69903C", fontFamily: "Lato", '&:hover': { backgroundColor: "#5A7A33", color: "#ffffff" } }}>Learn More</Button>
           </Grid>
         </Grid>
       </Box>
