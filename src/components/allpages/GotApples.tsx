@@ -3,11 +3,20 @@ import { Box, Typography, Grid, Button } from '@mui/material'
 import whiteApples from "../../img/apple-leaf-tile-olsenscider.com.jpeg"
 import bucket from "../../img/apple-bucket-olsenscider.com.png"
 import { useMediaQuery, useTheme } from '@mui/material';
+import { useNavigate } from 'react-router';
+import { useGlobalState } from '../../GlobalState';
 
 
 export default function GotApples() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const navigate = useNavigate();
+  const { setUrl } = useGlobalState();
+  const clickLearnMore = () => {
+    setUrl('/Services');
+    navigate('/Services');
+  };
+
   return (
     <>
       {/* Background */}
@@ -36,7 +45,22 @@ export default function GotApples() {
           <Grid item md={9} xs={12} sx={{ mt: "2rem" }}>
             <Typography variant="h2" sx={{ color: "white", textAlign: "left", width: "100%", ml: 1.5 }}>Got Apples?</Typography>
             <Typography variant="body1" sx={{ color: "white", textAlign: "left", width: "100%", mt: "2rem", ml: 1.5 }}>Your apples shouldn't go to waste. Let us help you turn your apple supply into a delicious autumn treat your whole family can enjoy.</Typography>
-            <Button variant='contained' sx={{ backgroundColor: "#69903C", fontFamily: "Lato", mb: "1.5rem", ml: 1.5, mt: "1.5rem", '&:hover': { backgroundColor: "#5A7A33", color: "#ffffff" } }}>Learn More</Button>
+            <Button
+              onClick={clickLearnMore}
+              variant='contained'
+              sx={{
+                backgroundColor: "#69903C",
+                fontFamily: "Lato",
+                mb: "1.5rem",
+                ml: 1.5,
+                mt: "1.5rem",
+                '&:hover': {
+                  backgroundColor: "#5A7A33",
+                  color: "#ffffff"
+                }
+              }}>
+              Learn More
+            </Button>
           </Grid>
         </Grid>
       </Box>

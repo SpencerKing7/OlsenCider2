@@ -22,7 +22,8 @@ export default function Footer() {
           '&:hover': {
             backgroundColor: "#242523",
             color: "#gray"
-          }
+          },
+          fontFamily: "Lato"
         }}
         onClick={clickFoodSafety}
       >

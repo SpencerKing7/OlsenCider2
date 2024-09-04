@@ -27,7 +27,10 @@ export default function ServicePackages() {
                 <Typography variant="body1" sx={{ pt: ".5rem" }}><b>Service Fee:</b> $40</Typography>
                 <Typography variant="body1" sx={{ pt: ".5rem" }}><b>Pressing Rate:</b> <span style={{ color: "green" }}>$4.50/gal</span></Typography>
                 <Typography variant="body1" sx={{ pt: ".5rem" }}>Provide your own bottles or buy some for $1.75 per gallon jug.</Typography>
-                <Button variant='contained'
+                <Button
+                  href='https://calendly.com/olsenscider/apple-pressing-service'
+                  target='_blank'
+                  variant='contained'
                   sx={{
                     backgroundColor: "#A02322",
                     fontFamily: "Lato",
@@ -51,7 +54,10 @@ export default function ServicePackages() {
                 <Typography sx={{ pt: ".5rem" }}><b>Service Fee:</b> $60</Typography>
                 <Typography sx={{ pt: ".5rem" }}><b>Pressing Rate:</b> <span style={{ color: "green" }}>$4.00/gal</span></Typography>
                 <Typography sx={{ pt: ".5rem" }}>Provide your own bottles or buy some for $1.75 per gallon jug.</Typography>
-                <Button variant='contained'
+                <Button
+                  href='https://calendly.com/olsenscider/apple-pressing-service'
+                  target='_blank'
+                  variant='contained'
                   sx={{
                     backgroundColor: "#A02322",
                     fontFamily: "Lato",

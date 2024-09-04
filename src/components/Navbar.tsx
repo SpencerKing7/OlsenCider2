@@ -10,6 +10,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Box from '@mui/material/Box';
 import { useMediaQuery, useTheme } from '@mui/material';
 import Drawer from '@mui/material/Drawer';
+import { useGlobalState } from '../GlobalState';
 
 // Define the type for the props of the ElevationScroll component
 interface ElevationScrollProps {
@@ -33,10 +34,10 @@ export default function NavBar(props: any) {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-  const [isSelected, setIsSelected] = React.useState('/');
+  const { url, setUrl } = useGlobalState();
 
   const handleNavClick = (path: string) => {
-    setIsSelected(path)
+    setUrl(path)
     navigate(path);
   };
 
@@ -46,19 +47,19 @@ export default function NavBar(props: any) {
 
   const renderMenuButtons = () => (
     <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row", textAlign: isMobile ? "left" : "right" }}>
-      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: isSelected === '/' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/')}>
+      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: url === '/' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/')}>
         Home
       </Button>
-      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: isSelected === '/AboutUs' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/AboutUs')}>
+      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: url === '/AboutUs' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/AboutUs')}>
         About Us
       </Button>
-      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: isSelected === '/Services' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/Services')}>
+      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: url === '/Services' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/Services')}>
         Services
       </Button>
-      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: isSelected === '/CiderTips' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/CiderTips')}>
+      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: url === '/CiderTips' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/CiderTips')}>
         Cider Tips
       </Button>
-      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: isSelected === '/ContactUs' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/ContactUs')}>
+      <Button sx={{ fontWeight: 500, fontFamily: 'Lato', color: url === '/ContactUs' ? "#881F1D" : "primary" }} onClick={() => handleNavClick('/ContactUs')}>
         Contact Us
       </Button>
     </Box>

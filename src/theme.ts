@@ -22,21 +22,22 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Itim", "Lato", "Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily:
+      '"Architects Daughter", "Itim", "Lato", "Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
       fontSize: "3rem",
       fontWeight: 700,
-      fontFamily: "Itim",
+      fontFamily: "Architects Daughter",
     },
     h2: {
       fontSize: "2rem",
       fontWeight: 600,
-      fontFamily: "Itim",
+      fontFamily: "Architects Daughter",
     },
     h3: {
       fontSize: "1.5rem",
       fontWeight: 600,
-      fontFamily: "Itim",
+      fontFamily: "Architects Daughter",
     },
     body1: {
       fontSize: "1rem",

@@ -2,13 +2,20 @@ import React from 'react'
 import { Box, Typography, Grid, Button, Avatar } from '@mui/material'
 import orchardWaterColor from "../../img/apple-orchard-watercolor-olsenscider.com.jpeg"
 import kylerJess from "../../img/kyler-jess-press-sq-olsenscider.com.jpg"
+import { useNavigate } from 'react-router'
+import { useGlobalState } from '../../GlobalState'
 
 
 export default function WhoAreOlsens() {
+  const navigate = useNavigate();
+  const { setUrl } = useGlobalState();
+  const clickLearnMore = () => {
+    setUrl('/AboutUs');
+    navigate('/AboutUs');
+  };
+
   return (
     <>
-
-
       {/* Background */}
       <Box sx={{
         backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(${orchardWaterColor})`,
@@ -30,7 +37,19 @@ export default function WhoAreOlsens() {
             </Typography>
           </Grid>
           <Grid item md={12} xs={12} sx={{ width: "100%", justifyContent: "center", display: "flex", mt: "1rem", pb: "2rem" }}>
-            <Button variant='contained' sx={{ backgroundColor: "#69903C", fontFamily: "Lato", '&:hover': { backgroundColor: "#5A7A33", color: "#ffffff" } }}>Learn More</Button>
+            <Button
+              onClick={clickLearnMore}
+              variant='contained'
+              sx={{
+                backgroundColor: "#69903C",
+                fontFamily: "Lato",
+                '&:hover': {
+                  backgroundColor: "#5A7A33",
+                  color: "#ffffff"
+                }
+              }}>
+              Learn More
+            </Button>
           </Grid>
         </Grid>
       </Box>
